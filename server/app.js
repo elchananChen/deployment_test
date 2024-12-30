@@ -7,6 +7,10 @@ import usersRoutes from "./routes/userRoute.js";
 import providersRoutes from "./routes/providerRoute.js";
 import PostsRoutes from "./routes/postsRoute.js";
 import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
